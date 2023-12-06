@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .profile-box {
+            margin: 20px;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .profile-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="mt-5">Profile Portal</h1>
+
+        <button class="btn btn-primary mb-4" id="viewButton">Click the button to view the Insta profile</button>
+
+        <div class="row">
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="1.jpg" alt="Profile 1">
+                <div class="profile-name">@sherwindseelan</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/sherwindseelan/')">View Profile</button>
+            </div>
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="3.jpg" alt="Profile 2">
+                <div class="profile-name">@mubashyrr</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/mubashyrr/')">View Profile</button>
+            </div>
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="6.jpg" alt="Profile 2">
+                <div class="profile-name">@sovvaah</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/sovvaah/')">View Profile</button>
+            </div>
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="2.jpg" alt="Profile 2">
+                <div class="profile-name">@im_lil.vsnu</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/im_lil.vsnu/')">View Profile</button>
+            </div>
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="4.jpg" alt="Profile 2">
+                <div class="profile-name">@sairaj_s_r_j</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/sairaj_s_r_j/')">View Profile</button>
+            </div>
+
+            <div class="col-md-4 profile-box">
+                <img class="profile-image" src="5.jpg" alt="Profile 2">
+                <div class="profile-name">@_rintu._</div>
+                <button class="btn btn-success profile-button" onclick="viewProfile('https://www.instagram.com/_rintu._/')">View Profile</button>
+            </div>
+
+            <!-- Add four more profile boxes as needed -->
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script>
+        function viewPage() {
+            // Add code to handle page redirection
+            window.location.href = 'https://example.com/redirected-page';
+        }
+
+        function viewProfile(url) {
+            // Add code to handle profile redirection
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+</html>
